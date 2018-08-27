@@ -21,3 +21,5 @@ C:\Users\1\source\repos\met\met\obj\Debug\netcoreapp2.1\met.RazorCoreGenerate.ca
 C:\Users\1\source\repos\met\met\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\1\source\repos\met\met\obj\Debug\netcoreapp2.1\met.RazorTargetAssemblyInfo.cs
 C:\Users\1\source\repos\met\met\obj\Debug\netcoreapp2.1\met.Views.pdb
+C:\Users\1\source\repos\met\met\obj\Debug\netcoreapp2.1\Razor\Views\Home\CreateRegistration.g.cshtml.cs
+C:\Users\1\source\repos\met\met\obj\Debug\netcoreapp2.1\Razor\Views\Home\Create.g.cshtml.cs
