@@ -1,4 +1,5 @@
-﻿using System;
+﻿using met.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -25,7 +26,7 @@ namespace met
         }
         public bool ValidationEmail(string email)
         {
-            if (email.Contains("@"))
+            if (email.Contains('@'))
             {
                 return true;
             }
@@ -34,6 +35,15 @@ namespace met
         public bool ValidationAge(string age)
         {
             if ( age!=null && age.All(char.IsDigit) ) 
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool ValidationRegistration(RegistrationModel model)
+        {
+            if(ValidationAge(model.Age.ToString()) && ValidationEmail(model.Email) 
+                && ValidationLogin(model.Login) && ValidationPassword(model.Password))
             {
                 return true;
             }

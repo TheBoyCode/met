@@ -43,10 +43,10 @@ namespace met.Controllers
         public IActionResult CreateRegistration(RegistrationModel model)
         {
             string message = "";
-
-            if (ModelState.IsValid)
+            validationService = new ValidationService();
+            if (ModelState.IsValid && validationService.ValidationRegistration(model))
             {
-                message = "Created successfully";
+                message = "ok";
             }
             else
             {
