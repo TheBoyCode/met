@@ -21,16 +21,14 @@ namespace met.Controllers
         }
         
         [HttpPost]
-        public IActionResult Create(LoginModel model)
+        public IActionResult CreateRegist(RegistrationModel model)
         {
-            validationService = new ValidationService();
             string message = "";
-
-            if (ModelState.IsValid && validationService.ValidationLogin(model.Login) &&
-                validationService.ValidationPassword(model.Password))
+            validationService = new ValidationService();
+            if (ModelState.IsValid && validationService.ValidationRegistration(model))
             {
-                //message = "ID " + model.ID + " Login " + model.Login + " Password " + model.Password + " created successfully";
                 return View();
+                //message = "ok";
             }
             else
             {
@@ -40,11 +38,11 @@ namespace met.Controllers
             return Content(message);
         }
         [HttpPost]
-        public IActionResult CreateRegistration(RegistrationModel model)
+        public IActionResult Authorization(LoginModel model)
         {
             string message = "";
             validationService = new ValidationService();
-            if (ModelState.IsValid && validationService.ValidationRegistration(model))
+            if (ModelState.IsValid && validationService.ValidationLogin(model.Login) && validationService.ValidationPassword(model.Password))
             {
                 message = "ok";
             }
@@ -52,6 +50,7 @@ namespace met.Controllers
             {
                 message = "Failed to create the product. Please try again";
             }
+
             return Content(message);
         }
     }
