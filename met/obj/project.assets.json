@@ -4615,6 +4615,39 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "met.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/met.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/met.Domain.Core.dll": {}
+        }
+      },
+      "met.Domain.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "met.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/met.Domain.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/met.Domain.Interfaces.dll": {}
+        }
+      },
+      "met.Services.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/met.Services.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/met.Services.Interfaces.dll": {}
+        }
       }
     }
   },
@@ -12208,13 +12241,31 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "met.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../met.Domain.Core/met.Domain.Core.csproj",
+      "msbuildProject": "../met.Domain.Core/met.Domain.Core.csproj"
+    },
+    "met.Domain.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../met.Domain.Interfaces/met.Domain.Interfaces.csproj",
+      "msbuildProject": "../met.Domain.Interfaces/met.Domain.Interfaces.csproj"
+    },
+    "met.Services.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../met.Services.Interfaces/met.Services.Interfaces.csproj",
+      "msbuildProject": "../met.Services.Interfaces/met.Services.Interfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1",
+      "met.Domain.Core >= 1.0.0",
+      "met.Domain.Interfaces >= 1.0.0",
+      "met.Services.Interfaces >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12246,7 +12297,17 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\1\\source\\repos\\met\\met.Domain.Core\\met.Domain.Core.csproj": {
+              "projectPath": "C:\\Users\\1\\source\\repos\\met\\met.Domain.Core\\met.Domain.Core.csproj"
+            },
+            "C:\\Users\\1\\source\\repos\\met\\met.Domain.Interfaces\\met.Domain.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\1\\source\\repos\\met\\met.Domain.Interfaces\\met.Domain.Interfaces.csproj"
+            },
+            "C:\\Users\\1\\source\\repos\\met\\met.Services.Interfaces\\met.Services.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\1\\source\\repos\\met\\met.Services.Interfaces\\met.Services.Interfaces.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

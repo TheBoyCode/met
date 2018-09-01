@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using met.Models;
+using met.Domain.Core;
 using Microsoft.AspNetCore.Mvc;
 //using ASPNetCoreForms.models;
 
@@ -21,14 +21,13 @@ namespace met.Controllers
         }
         
         [HttpPost]
-        public IActionResult CreateRegist(RegistrationModel model)
+        public IActionResult CreateRegist(User model)
         {
             string message = "";
             validationService = new ValidationService();
             if (ModelState.IsValid && validationService.ValidationRegistration(model))
             {
-                return View();
-                //message = "ok";
+                message = "ok";
             }
             else
             {
@@ -37,21 +36,6 @@ namespace met.Controllers
             
             return Content(message);
         }
-        [HttpPost]
-        public IActionResult Authorization(LoginModel model)
-        {
-            string message = "";
-            validationService = new ValidationService();
-            if (ModelState.IsValid && validationService.ValidationLogin(model.Login) && validationService.ValidationPassword(model.Password))
-            {
-                message = "ok";
-            }
-            else
-            {
-                message = "Failed to create the product. Please try again";
-            }
-
-            return Content(message);
-        }
+       
     }
 }

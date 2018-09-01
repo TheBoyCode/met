@@ -1,0 +1,12 @@
+C:\Users\1\source\repos\met\met.Domain.Interfaces\bin\Debug\netstandard2.0\met.Domain.Interfaces.deps.json
+C:\Users\1\source\repos\met\met.Domain.Interfaces\bin\Debug\netstandard2.0\met.Domain.Interfaces.dll
+C:\Users\1\source\repos\met\met.Domain.Interfaces\bin\Debug\netstandard2.0\met.Domain.Interfaces.pdb
+C:\Users\1\source\repos\met\met.Domain.Interfaces\bin\Debug\netstandard2.0\met.Domain.Core.dll
+C:\Users\1\source\repos\met\met.Domain.Interfaces\bin\Debug\netstandard2.0\met.Domain.Core.pdb
+C:\Users\1\source\repos\met\met.Domain.Interfaces\obj\Debug\netstandard2.0\met.Domain.Interfaces.csprojAssemblyReference.cache
+C:\Users\1\source\repos\met\met.Domain.Interfaces\obj\Debug\netstandard2.0\met.Domain.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\met\met.Domain.Interfaces\obj\Debug\netstandard2.0\met.Domain.Interfaces.AssemblyInfoInputs.cache
+C:\Users\1\source\repos\met\met.Domain.Interfaces\obj\Debug\netstandard2.0\met.Domain.Interfaces.AssemblyInfo.cs
+C:\Users\1\source\repos\met\met.Domain.Interfaces\obj\Debug\netstandard2.0\met.Domain.Interfaces.csproj.CopyComplete
+C:\Users\1\source\repos\met\met.Domain.Interfaces\obj\Debug\netstandard2.0\met.Domain.Interfaces.dll
+C:\Users\1\source\repos\met\met.Domain.Interfaces\obj\Debug\netstandard2.0\met.Domain.Interfaces.pdb

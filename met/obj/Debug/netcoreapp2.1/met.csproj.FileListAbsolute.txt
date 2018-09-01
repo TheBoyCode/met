@@ -21,4 +21,9 @@ C:\Users\1\source\repos\met\met\obj\Debug\netcoreapp2.1\met.RazorCoreGenerate.ca
 C:\Users\1\source\repos\met\met\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\1\source\repos\met\met\obj\Debug\netcoreapp2.1\met.RazorTargetAssemblyInfo.cs
 C:\Users\1\source\repos\met\met\obj\Debug\netcoreapp2.1\met.Views.pdb
-C:\Users\1\source\repos\met\met\obj\Debug\netcoreapp2.1\Razor\Views\Home\CreateRegist.g.cshtml.cs
+C:\Users\1\source\repos\met\met\bin\Debug\netcoreapp2.1\met.Domain.Core.dll
+C:\Users\1\source\repos\met\met\bin\Debug\netcoreapp2.1\met.Domain.Interfaces.dll
+C:\Users\1\source\repos\met\met\bin\Debug\netcoreapp2.1\met.Services.Interfaces.dll
+C:\Users\1\source\repos\met\met\bin\Debug\netcoreapp2.1\met.Domain.Core.pdb
+C:\Users\1\source\repos\met\met\bin\Debug\netcoreapp2.1\met.Domain.Interfaces.pdb
+C:\Users\1\source\repos\met\met\bin\Debug\netcoreapp2.1\met.Services.Interfaces.pdb

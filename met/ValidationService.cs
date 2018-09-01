@@ -1,4 +1,4 @@
-﻿using met.Models;
+﻿using met.Domain.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,7 +40,7 @@ namespace met
             }
             return false;
         }
-        public bool ValidationRegistration(RegistrationModel model)
+        public bool ValidationRegistration(User model)
         {
             if(ValidationAge(model.Age.ToString()) && ValidationEmail(model.Email) 
                 && ValidationLogin(model.Login) && ValidationPassword(model.Password))

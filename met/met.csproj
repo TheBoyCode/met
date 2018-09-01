@@ -13,4 +13,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\met.Domain.Core\met.Domain.Core.csproj" />
+    <ProjectReference Include="..\met.Domain.Interfaces\met.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\met.Services.Interfaces\met.Services.Interfaces.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,9 @@
+C:\Users\1\source\repos\met\met.Domain.Core\bin\Debug\netstandard2.0\met.Domain.Core.deps.json
+C:\Users\1\source\repos\met\met.Domain.Core\bin\Debug\netstandard2.0\met.Domain.Core.dll
+C:\Users\1\source\repos\met\met.Domain.Core\bin\Debug\netstandard2.0\met.Domain.Core.pdb
+C:\Users\1\source\repos\met\met.Domain.Core\obj\Debug\netstandard2.0\met.Domain.Core.csprojAssemblyReference.cache
+C:\Users\1\source\repos\met\met.Domain.Core\obj\Debug\netstandard2.0\met.Domain.Core.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\met\met.Domain.Core\obj\Debug\netstandard2.0\met.Domain.Core.AssemblyInfoInputs.cache
+C:\Users\1\source\repos\met\met.Domain.Core\obj\Debug\netstandard2.0\met.Domain.Core.AssemblyInfo.cs
+C:\Users\1\source\repos\met\met.Domain.Core\obj\Debug\netstandard2.0\met.Domain.Core.dll
+C:\Users\1\source\repos\met\met.Domain.Core\obj\Debug\netstandard2.0\met.Domain.Core.pdb
