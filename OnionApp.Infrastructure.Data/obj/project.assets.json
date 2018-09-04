@@ -82,6 +82,20 @@
         "runtime": {
           "bin/placeholder/met.Domain.Core.dll": {}
         }
+      },
+      "met.Domain.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Npgsql": "4.0.2",
+          "met.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/met.Domain.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/met.Domain.Interfaces.dll": {}
+        }
       }
     }
   },
@@ -345,12 +359,18 @@
       "type": "project",
       "path": "../met.Domain.Core/met.Domain.Core.csproj",
       "msbuildProject": "../met.Domain.Core/met.Domain.Core.csproj"
+    },
+    "met.Domain.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../met.Domain.Interfaces/met.Domain.Interfaces.csproj",
+      "msbuildProject": "../met.Domain.Interfaces/met.Domain.Interfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "met.Domain.Core >= 1.0.0"
+      "met.Domain.Core >= 1.0.0",
+      "met.Domain.Interfaces >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -360,11 +380,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1\\source\\repos\\met\\met.Services.Interfaces\\met.Services.Interfaces.csproj",
-      "projectName": "met.Services.Interfaces",
-      "projectPath": "C:\\Users\\1\\source\\repos\\met\\met.Services.Interfaces\\met.Services.Interfaces.csproj",
+      "projectUniqueName": "C:\\Users\\1\\source\\repos\\met\\OnionApp.Infrastructure.Data\\OnionApp.Infrastructure.Data.csproj",
+      "projectName": "OnionApp.Infrastructure.Data",
+      "projectPath": "C:\\Users\\1\\source\\repos\\met\\OnionApp.Infrastructure.Data\\OnionApp.Infrastructure.Data.csproj",
       "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1\\source\\repos\\met\\met.Services.Interfaces\\obj\\",
+      "outputPath": "C:\\Users\\1\\source\\repos\\met\\OnionApp.Infrastructure.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -385,6 +405,9 @@
           "projectReferences": {
             "C:\\Users\\1\\source\\repos\\met\\met.Domain.Core\\met.Domain.Core.csproj": {
               "projectPath": "C:\\Users\\1\\source\\repos\\met\\met.Domain.Core\\met.Domain.Core.csproj"
+            },
+            "C:\\Users\\1\\source\\repos\\met\\met.Domain.Interfaces\\met.Domain.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\1\\source\\repos\\met\\met.Domain.Interfaces\\met.Domain.Interfaces.csproj"
             }
           }
         }

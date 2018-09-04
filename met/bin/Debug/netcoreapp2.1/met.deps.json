@@ -535,6 +535,9 @@
         }
       },
       "met.Services.Interfaces/1.0.0": {
+        "dependencies": {
+          "met.Domain.Core": "1.0.0"
+        },
         "runtime": {
           "met.Services.Interfaces.dll": {}
         },

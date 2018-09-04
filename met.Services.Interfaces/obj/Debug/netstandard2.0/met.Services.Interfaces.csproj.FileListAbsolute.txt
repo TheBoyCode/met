@@ -6,3 +6,7 @@ C:\Users\1\source\repos\met\met.Services.Interfaces\obj\Debug\netstandard2.0\met
 C:\Users\1\source\repos\met\met.Services.Interfaces\obj\Debug\netstandard2.0\met.Services.Interfaces.AssemblyInfo.cs
 C:\Users\1\source\repos\met\met.Services.Interfaces\obj\Debug\netstandard2.0\met.Services.Interfaces.dll
 C:\Users\1\source\repos\met\met.Services.Interfaces\obj\Debug\netstandard2.0\met.Services.Interfaces.pdb
+C:\Users\1\source\repos\met\met.Services.Interfaces\bin\Debug\netstandard2.0\met.Domain.Core.dll
+C:\Users\1\source\repos\met\met.Services.Interfaces\bin\Debug\netstandard2.0\met.Domain.Core.pdb
+C:\Users\1\source\repos\met\met.Services.Interfaces\obj\Debug\netstandard2.0\met.Services.Interfaces.csprojAssemblyReference.cache
+C:\Users\1\source\repos\met\met.Services.Interfaces\obj\Debug\netstandard2.0\met.Services.Interfaces.csproj.CopyComplete

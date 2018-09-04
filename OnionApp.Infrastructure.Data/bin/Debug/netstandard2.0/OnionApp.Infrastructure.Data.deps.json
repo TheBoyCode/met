@@ -7,13 +7,14 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "met.Services.Interfaces/1.0.0": {
+      "OnionApp.Infrastructure.Data/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "met.Domain.Core": "1.0.0"
+          "met.Domain.Core": "1.0.0",
+          "met.Domain.Interfaces": "1.0.0"
         },
         "runtime": {
-          "met.Services.Interfaces.dll": {}
+          "OnionApp.Infrastructure.Data.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -26,11 +27,19 @@
         "runtime": {
           "met.Domain.Core.dll": {}
         }
+      },
+      "met.Domain.Interfaces/1.0.0": {
+        "dependencies": {
+          "met.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "met.Domain.Interfaces.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "met.Services.Interfaces/1.0.0": {
+    "OnionApp.Infrastructure.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -50,6 +59,11 @@
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
     "met.Domain.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "met.Domain.Interfaces/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
