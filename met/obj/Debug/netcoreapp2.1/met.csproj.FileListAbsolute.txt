@@ -27,3 +27,5 @@ C:\Users\1\source\repos\met\met\bin\Debug\netcoreapp2.1\met.Services.Interfaces.
 C:\Users\1\source\repos\met\met\bin\Debug\netcoreapp2.1\met.Domain.Core.pdb
 C:\Users\1\source\repos\met\met\bin\Debug\netcoreapp2.1\met.Domain.Interfaces.pdb
 C:\Users\1\source\repos\met\met\bin\Debug\netcoreapp2.1\met.Services.Interfaces.pdb
+C:\Users\1\source\repos\met\met\bin\Debug\netcoreapp2.1\OnionApp.Infrastructure.Data.dll
+C:\Users\1\source\repos\met\met\bin\Debug\netcoreapp2.1\OnionApp.Infrastructure.Data.pdb

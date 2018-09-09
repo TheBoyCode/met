@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using met.Domain.Core;
+using met.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 //using ASPNetCoreForms.models;
 
@@ -12,6 +13,7 @@ namespace met.Controllers
 {
     public class HomeController : Controller
     {
+        private UserService service;
         private ValidationService validationService;
         // GET: /<controller>/
         [HttpGet]
@@ -27,6 +29,8 @@ namespace met.Controllers
             validationService = new ValidationService();
             if (ModelState.IsValid && validationService.ValidationRegistration(model))
             {
+                service = new UserService();
+                service.Add(model);
                 message = "ok";
             }
             else

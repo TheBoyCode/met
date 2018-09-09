@@ -8,7 +8,10 @@ namespace OnionApp.Infrastructure.Data
 {
     public class DBHelper
     {
-        private DBHelper() { }
+        private DBHelper()
+        {
+           // Connection();
+        }
         private static DBHelper instance = null;
         public static DBHelper getInstance()
         {
@@ -22,7 +25,7 @@ namespace OnionApp.Infrastructure.Data
         public void Connection()
         {
             string connstring = String.Format("Server=127.0.0.1;Port=5432 ;" +
-            "User Id=postgres;Password=root;Database=application;");
+            "User Id=postgres;Password=root;Database=users;");
              conn = new NpgsqlConnection(connstring);
             try
             {
@@ -52,8 +55,9 @@ namespace OnionApp.Infrastructure.Data
         }
         public void AddUser(User user)
         {
-            string add = @"INSERT INTO u(login,password,email,age,numberphone) VALUES("+user.Login+","+user.Password+
-                ","+user.Email+","+user.Age+")";
+            Connection();
+            string add = @"INSERT INTO tusers(id,login,password,email,age) VALUES('"+Guid.NewGuid().ToString()+"','"+user.Login+"','"+user.Password+
+                "','"+user.Email+"','"+user.Age+"')";
             NpgsqlCommand cmdW = new NpgsqlCommand(add, conn);
             cmdW.ExecuteNonQuery();
         }

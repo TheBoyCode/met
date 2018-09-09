@@ -82,6 +82,35 @@
         "runtime": {
           "bin/placeholder/met.Domain.Core.dll": {}
         }
+      },
+      "met.Domain.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Npgsql": "4.0.2",
+          "met.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/met.Domain.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/met.Domain.Interfaces.dll": {}
+        }
+      },
+      "OnionApp.Infrastructure.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Npgsql": "4.0.2",
+          "met.Domain.Core": "1.0.0",
+          "met.Domain.Interfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OnionApp.Infrastructure.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnionApp.Infrastructure.Data.dll": {}
+        }
       }
     }
   },
@@ -345,11 +374,23 @@
       "type": "project",
       "path": "../met.Domain.Core/met.Domain.Core.csproj",
       "msbuildProject": "../met.Domain.Core/met.Domain.Core.csproj"
+    },
+    "met.Domain.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../met.Domain.Interfaces/met.Domain.Interfaces.csproj",
+      "msbuildProject": "../met.Domain.Interfaces/met.Domain.Interfaces.csproj"
+    },
+    "OnionApp.Infrastructure.Data/1.0.0": {
+      "type": "project",
+      "path": "../OnionApp.Infrastructure.Data/OnionApp.Infrastructure.Data.csproj",
+      "msbuildProject": "../OnionApp.Infrastructure.Data/OnionApp.Infrastructure.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
+      "Npgsql >= 4.0.2",
+      "OnionApp.Infrastructure.Data >= 1.0.0",
       "met.Domain.Core >= 1.0.0"
     ]
   },
@@ -385,6 +426,9 @@
           "projectReferences": {
             "C:\\Users\\1\\source\\repos\\met\\met.Domain.Core\\met.Domain.Core.csproj": {
               "projectPath": "C:\\Users\\1\\source\\repos\\met\\met.Domain.Core\\met.Domain.Core.csproj"
+            },
+            "C:\\Users\\1\\source\\repos\\met\\OnionApp.Infrastructure.Data\\OnionApp.Infrastructure.Data.csproj": {
+              "projectPath": "C:\\Users\\1\\source\\repos\\met\\OnionApp.Infrastructure.Data\\OnionApp.Infrastructure.Data.csproj"
             }
           }
         }
@@ -403,6 +447,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Npgsql": {
+            "target": "Package",
+            "version": "[4.0.2, )"
           }
         },
         "imports": [
